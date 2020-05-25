@@ -10,6 +10,7 @@ workex = dataset['workex']
 specialisation = dataset['specialisation']
 status = dataset['status']
 
+#changing into dummy variable
 gender = pd.get_dummies(gender, drop_first=True )
 ssc_b = pd.get_dummies(ssc_b, drop_first=True )
 hsc_b = pd.get_dummies(hsc_b, drop_first=True )

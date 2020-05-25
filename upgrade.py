@@ -24,7 +24,7 @@ if acc3<85:
         print("sorry not working!!!")
         exit()
     os.system("sed -i '/softmax/ i {}' /mlops/code.py".format(y))
-    os.system("curl --user "bhargavbhatiya:323334" http://192.168.43.2:8080/job/mlops_job2/build?token=redhat")
+    os.system("curl --user "bhargavbhatiya:323334" http://192.168.43.2:8080/job/mlops_job1/build?token=redhat")
 
     acc = os.popen("cat /mlops/accuracy.txt")
     acc1 = acc.read()
